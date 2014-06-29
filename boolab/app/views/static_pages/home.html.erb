@@ -1,5 +1,7 @@
 
-
+<% if user_signed_in? %>
+	<button style="float:right"> Sell here </button>
+<% else %>
 <div class="center hero-unit">
   <h1>Boola Basements</h1>
 
@@ -9,4 +11,5 @@
 
   <%= link_to "Sign up now!", '/users/sign_up', class: "btn btn-large btn-primary" %>
 </div>
+<%end%>
 
