@@ -1,5 +1,17 @@
 
+<% if user_signed_in? %>
+	<button style="float:right"> Sell here </button>
+	<%= form_for(@request) do |f| %>
+		<%= f.label :datein %>
+		<%= f.text_field :datein %>
 
+		<%= f.label :dateout %>
+		<%= f.text_field :dateout %>
+
+		<%= f.submit "Create Request" %>
+	<% end %>
+
+<% else %>
 <div class="center hero-unit">
   <h1>Boola Basements</h1>
 
@@ -9,4 +21,5 @@
 
   <%= link_to "Sign up now!", '/users/sign_up', class: "btn btn-large btn-primary" %>
 </div>
+<%end%>
 
