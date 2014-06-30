@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140629233017) do
+ActiveRecord::Schema.define(version: 20140630151355) do
+
+  create_table "listings", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.string   "datein"
+    t.string   "dateout"
+  end
 
   create_table "requests", force: true do |t|
     t.string   "datein"

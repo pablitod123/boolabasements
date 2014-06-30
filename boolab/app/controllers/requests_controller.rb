@@ -1,11 +1,14 @@
 class RequestsController < ApplicationController
 	def new
-		@request = current_user.requests.new
+		if user_signed_in?
+			@request = current_user.requests.new
+		end
 	end
 
 	def create
 		@request = current_user.requests.new(request_params)
 		@request.save
+		redirect_to "/requests"
 	end
 
 	def request_params

@@ -1,6 +1,6 @@
 
 <% if user_signed_in? %>
-	<button style="float:right"> Sell here </button>
+	<%= button_to "New listing", "/listings", :class => "button", :method => :get  %>
 	<%= form_for(@request) do |f| %>
 		<%= f.label :datein %>
 		<%= f.text_field :datein %>
