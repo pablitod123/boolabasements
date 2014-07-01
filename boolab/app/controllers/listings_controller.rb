@@ -12,7 +12,7 @@ class ListingsController < ApplicationController
 	end
 
 	def index
-		@listings = Listing.all
+		@listings = Listing.all.reverse
 	end
 
 	def listing_params

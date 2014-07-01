@@ -1,2 +1,6 @@
 <% provide(:title, 'Listings') %>
-<h1> New Listings REALLY THO</h1>
+<h1><%= current_user.name %>'s Listings</h1>
+<% @listings.each do |listing| %>
+<div class= "userlistings listings"><%= listing.datein %> <%= listing.dateout %></div>
+<% end %>
+

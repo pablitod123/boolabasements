@@ -29,19 +29,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
+  font-size: 4em;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
 h2 {
   font-size: 1.2em;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: #E0E0E0 ;
+}
+
+h3 {
+  text-align:center;
 }
 
 p {
@@ -75,6 +79,8 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999;
+  margin-left:30px;
+  margin-right:30px;
 }
 
 footer a {
@@ -101,4 +107,39 @@ footer ul li {
 .button{
   float:right;
 }
+
+.listings {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bighome {
+  background-color: #3366CC;
+  margin:10px;
+  padding:20px;
+  border-radius: 10px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#navbar {
+  background-color:#F0F0F0;
+  margin-top: -40px;
+  padding:10px;
+}
+
+.pure-menu a:hover {
+ color: orange;
+}
+
+.pure-button {
+  border-radius:20px;
+}
+
+.signupform {
+  background-color:#E0E0E0;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+}
+
 
