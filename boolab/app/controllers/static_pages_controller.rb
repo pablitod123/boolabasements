@@ -1,6 +1,8 @@
 class StaticPagesController < ApplicationController
   def home
-  	@request = current_user.requests.new
+		if user_signed_in?
+			@request = current_user.requests.new
+		end
   end
 
   def help

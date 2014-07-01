@@ -98,5 +98,7 @@ footer ul li {
   float: left;
   margin-left: 10px;
 }
-
+.button{
+  float:right;
+}
 
