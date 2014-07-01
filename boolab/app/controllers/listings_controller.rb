@@ -8,6 +8,7 @@ class ListingsController < ApplicationController
 	def create
 		@listing = current_user.listings.new(listing_params)
 		@listing.save
+		redirect_to '/listings'
 	end
 
 	def index

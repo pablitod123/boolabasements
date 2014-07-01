@@ -1,0 +1,14 @@
+<% provide(:title, 'Listings') %>
+<h1> New Listings</h1>
+<% if user_signed_in? %>
+	<%= form_for(@listing) do |f| %>
+		<%= f.label :datein %>
+		<%= f.text_field :datein %>
+
+		<%= f.label :dateout %>
+		<%= f.text_field :dateout %>
+
+		<%= f.submit "Create Listing" %>
+	<% end %>
+	<!-- put stuff here later -->
+<% end %>

@@ -1,6 +1,6 @@
 
 <% if user_signed_in? %>
-	<%= button_to "New listing", "/listings", :class => "button", :method => :get  %>
+	<%= button_to "New listing", "/listings/new", :class => "button", :method => :get  %>
 	<%= form_for(@request) do |f| %>
 		<%= f.label :datein %>
 		<%= f.text_field :datein %>
