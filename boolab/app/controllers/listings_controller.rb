@@ -12,7 +12,7 @@ class ListingsController < ApplicationController
 	end
 
 	def index
-		@listings = Listing.all.reverse
+		@listings = current_user.listings.all.reverse
 	end
 
 	def listing_params
