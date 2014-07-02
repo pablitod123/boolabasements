@@ -3,6 +3,24 @@
   <head>
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
   <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+     <style type="text/css">
+    .ui-datepicker {
+    background: #333;
+    border: 1px solid #555;
+    color: #EEE;
+  }
+  </style>
+    <script>
+    var $j = jQuery.noConflict();
+    $j(document).ready(function(){
+     $j(function() {
+      $j( ".datepicker" ).datepicker();
+      });
+      });
+    </script>
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>

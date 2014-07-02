@@ -2,11 +2,11 @@
 <h1> New Listings</h1>
 <% if user_signed_in? %>
 	<%= form_for(@listing) do |f| %>
-		<%= f.label :datein %>
-		<%= f.text_field :datein %>
+		<%= f.label "Start" %>
+		<%= f.text_field :datein, :class => 'datepicker'  %>
 
-		<%= f.label :dateout %>
-		<%= f.text_field :dateout %>
+		<%= f.label "Finish" %>
+		<%= f.text_field :dateout, :class => 'datepicker'  %>
 
 		<%= f.submit "Create Listing" %>
 	<% end %>
