@@ -80,7 +80,7 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = {:host => 'http://cryptic-garden-2639.herokuapp.com/', :protocol => 'http'}
+  config.action_mailer.default_url_options = {:host => 'http://boolabasements.herokuapp.com/', :protocol => 'http'}
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
