@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   has_many :requests
   has_many :listings
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :trackable, :validatable, :confirmable
   validates :name, presence: true
 
 end
