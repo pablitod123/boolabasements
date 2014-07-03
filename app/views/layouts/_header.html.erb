@@ -1,0 +1,19 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+<div id="navbar" class="pure-menu pure-menu-open pure-menu-horizontal">
+    <a href="/" class="pure-menu-heading">Boola Basements</a>
+    <ul>
+        <li class="pure-menu-selected"><%= link_to "Home",    root_path %></li>
+        <li class="pure-menu"><%= link_to "Help",    help_path %></li>
+        <li class="pure-menu"> <% if user_signed_in? %>
+              <%= link_to 'Edit profile', edit_user_registration_path %> 
+              <% else %>
+                <%= link_to "Sign in", new_user_session_path %>
+              <% end %> 
+          </li>
+          <% if user_signed_in? %>
+              <li class="pure-menu"> <%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>
+          <% end %> 
+    </ul>
+</div>
+</header>
+
