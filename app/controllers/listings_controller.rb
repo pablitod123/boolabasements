@@ -16,6 +16,6 @@ class ListingsController < ApplicationController
 	end
 
 	def listing_params
-		params.require(:listing).permit(:datein, :dateout, :user_id)
+		params.require(:listing).permit(:datein, :dateout, :location, :user_id)
 	end
 end
