@@ -3,6 +3,4 @@
 require ::File.expand_path('../config/environment',  __FILE__)
 run Rails.application
 require 'rubygems'
-require 'sinatra'
-require './web'
-run Sinatra::Application
+

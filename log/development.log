@@ -4132,3 +4132,697 @@ Completed 200 OK in 73ms (Views: 71.2ms | ActiveRecord: 0.0ms)
   [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140630151355')
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_confirmation_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_confirmation_token' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:59:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 183ms (Views: 124.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:59:21 -0400
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-07-07 09:59:23 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (131.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 195ms (Views: 168.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-07 09:59:32 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WB/CJqA9g0zbqe5nkdP/M6vHiMFd7obdkt1PhnnBJcI=", "user"=>{"name"=>"Henok Addis", "email"=>"henok.addis@yale.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: password_confirmation
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'henok.addis@yale.edu' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."confirmation_token" = '59aca9b499605f627b474f005b276b5744130b5f5f198ff82832bfe95ef224df'  ORDER BY "users"."id" ASC LIMIT 1
+Binary data inserted for `string` type on column `confirmation_token`
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "created_at", "email", "encrypted_password", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["confirmation_sent_at", "2014-07-07 13:59:33.144734"], ["confirmation_token", "59aca9b499605f627b474f005b276b5744130b5f5f198ff82832bfe95ef224df"], ["created_at", "2014-07-07 13:59:32.677717"], ["email", "henok.addis@yale.edu"], ["encrypted_password", "$2a$10$DYHZxDoSTeAZ1oyzNzNDTe71rTmVHy6F5132Us.g4ywdWs4dM1Uiu"], ["name", "Henok Addis"], ["updated_at", "2014-07-07 13:59:32.677717"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.2ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 39.9ms
+
+Sent mail to henok.addis@yale.edu (3082.9ms)
+Date: Mon, 07 Jul 2014 09:59:33 -0400
+From: henok4@gmail.com
+Reply-To: henok4@gmail.com
+To: henok.addis@yale.edu
+Message-ID: <53baa7c536d7e_b0e3fe1def1eb183348b@Hannas-MacBook-Pro.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome to BoolaBasements!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=ouPkL6HV9cDKvq5YFgM7">Confirm my account</a></p>
+<p> Enjoy the service, and have a fantastic day. </p>
+
+<p> -- Henok Addis | Paul Styslinger | 2017 --</p>
+
+  [1m[35m (2.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 3863ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 09:59:36 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 09:59:36 -0400
+
+
+Started GET "/users/confirmation?confirmation_token=ouPkL6HV9cDKvq5YFgM7" for 127.0.0.1 at 2014-07-07 09:59:59 -0400
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"ouPkL6HV9cDKvq5YFgM7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."confirmation_token" = '59aca9b499605f627b474f005b276b5744130b5f5f198ff82832bfe95ef224df'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "users" SET "confirmation_token" = ?, "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["confirmation_token", nil], ["confirmed_at", "2014-07-07 13:59:59.811812"], ["updated_at", "2014-07-07 13:59:59.812332"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 14ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 09:59:59 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (70.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 89ms (Views: 86.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:00:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:00 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:00 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:00 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:00 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:00 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:00 -0400
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-07-07 10:00:05 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WB/CJqA9g0zbqe5nkdP/M6vHiMFd7obdkt1PhnnBJcI=", "user"=>{"email"=>"henok.addis@yale.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'henok.addis@yale.edu'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-07-07 14:00:05.813849"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-07-07 14:00:05.813849"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-07-07 14:00:05.815423"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 108ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:00:05 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 170ms (Views: 26.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:06 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:06 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:00:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:06 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:06 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:06 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:06 -0400
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-07-07 10:00:08 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2014-07-07 10:00:11 -0400
+Processing by Devise::RegistrationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zDdPfExcgKi6GIFrtdgLQP0DB//LFUPGKGTyYrpCTZ0="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (8.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 123ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:00:11 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:12 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:12 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:12 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:12 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:12 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:00:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:12 -0400
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-07-07 10:00:27 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-07 10:00:39 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v8rMBBoMG+aNOF2auAfgcvG0vITZvxjaFSM0ODGq654=", "user"=>{"name"=>"Heen", "email"=>"henok.addis@yale.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: password_confirmation
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'henok.addis@yale.edu' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."confirmation_token" = '1b3a3c3f6f82f933265dd0d9fdcce35c354013410d19da5e76333d2b50d865ea'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Binary data inserted for `string` type on column `confirmation_token`
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "created_at", "email", "encrypted_password", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["confirmation_sent_at", "2014-07-07 14:00:39.446875"], ["confirmation_token", "1b3a3c3f6f82f933265dd0d9fdcce35c354013410d19da5e76333d2b50d865ea"], ["created_at", "2014-07-07 14:00:39.445043"], ["email", "henok.addis@yale.edu"], ["encrypted_password", "$2a$10$3p3vDppL2kduOozt3ZgQhee9MjGkbEsEvPIIe88t0f.MJ5IBYRvMO"], ["name", "Heen"], ["updated_at", "2014-07-07 14:00:39.445043"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.6ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 18.2ms
+
+Sent mail to henok.addis@yale.edu (2729.5ms)
+Date: Mon, 07 Jul 2014 10:00:39 -0400
+From: henok4@gmail.com
+Reply-To: henok4@gmail.com
+To: henok.addis@yale.edu
+Message-ID: <53baa80772902_b0e3fe1df8893d8335d7@Hannas-MacBook-Pro.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome to BoolaBasements!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=CwEPQeqGqQxCdyxD3To2">Confirm my account</a></p>
+<p> Enjoy the service, and have a fantastic day. </p>
+
+<p> -- Henok Addis | Paul Styslinger | 2017 --</p>
+
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2880ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:00:42 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:00:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:42 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:42 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:42 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:42 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:42 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:00:42 -0400
+
+
+Started GET "/users/confirmation?confirmation_token=CwEPQeqGqQxCdyxD3To2" for 127.0.0.1 at 2014-07-07 10:01:22 -0400
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"CwEPQeqGqQxCdyxD3To2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."confirmation_token" = '1b3a3c3f6f82f933265dd0d9fdcce35c354013410d19da5e76333d2b50d865ea'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "confirmation_token" = ?, "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = 2  [["confirmation_token", nil], ["confirmed_at", "2014-07-07 14:01:22.681178"], ["updated_at", "2014-07-07 14:01:22.681750"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 12ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 10:01:22 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:01:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:23 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:23 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:23 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:23 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:23 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-07 10:01:23 -0400
+
+
+Started GET "/users/confirmation?confirmation_token=CwEPQeqGqQxCdyxD3To2" for 127.0.0.1 at 2014-07-07 10:02:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"CwEPQeqGqQxCdyxD3To2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."confirmation_token" = '1b3a3c3f6f82f933265dd0d9fdcce35c354013410d19da5e76333d2b50d865ea'  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/shared/_links.erb (2.5ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (19.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (7.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 808ms (Views: 133.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:21 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:22 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-07 10:02:22 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:22 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:22 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:22 -0400
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-07-07 10:02:32 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (28.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-07 10:02:41 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v8rMBBoMG+aNOF2auAfgcvG0vITZvxjaFSM0ODGq654=", "user"=>{"name"=>"hell", "email"=>"henok.addis@yale.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: password_confirmation
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'henok.addis@yale.edu' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 188ms (Views: 70.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:42 -0400
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2014-07-07 10:02:49 -0400
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:49 -0400
+
+
+Started POST "/users/confirmation" for 127.0.0.1 at 2014-07-07 10:02:52 -0400
+Processing by Devise::ConfirmationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v8rMBBoMG+aNOF2auAfgcvG0vITZvxjaFSM0ODGq654=", "user"=>{"email"=>"henok.addis@yale.edu"}, "commit"=>"Resend confirmation instructions"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'henok.addis@yale.edu'  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/shared/_links.erb (0.9ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 38ms (Views: 28.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:53 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 10:02:57 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 44ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:02:57 -0400
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-07-07 10:03:01 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v8rMBBoMG+aNOF2auAfgcvG0vITZvxjaFSM0ODGq654=", "user"=>{"email"=>"henok.addis@yale.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'henok.addis@yale.edu'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2[0m  [["current_sign_in_at", "2014-07-07 14:03:01.584827"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-07-07 14:03:01.584827"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-07-07 14:03:01.632302"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 172ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:03:01 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 20.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:01 -0400
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-07-07 10:03:03 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T63pCSa8I78CMiAzmyiywOcq99MPZKFQkzzkfOuA3Ws="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:03:03 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:04 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-07 10:03:05 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-07-07 10:03:08 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g9XtTQb1/NfzGUzoh8LfVTsypWx6g0Tn2NFGztT7Woo=", "user"=>{"email"=>"henok.addis@yale.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'henok.addis@yale.edu'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 2[0m  [["current_sign_in_at", "2014-07-07 14:03:08.195759"], ["sign_in_count", 2], ["updated_at", "2014-07-07 14:03:08.196668"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 119ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:03:08 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:08 -0400
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-07-07 10:03:09 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 39ms (Views: 25.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2014-07-07 10:03:12 -0400
+Processing by Devise::RegistrationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JVE/F/N3cojVFzgnn8uNZSH7DGubVEdQc5XRP/1xv44="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 78ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:03:12 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:12 -0400
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-07-07 10:03:18 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-07-07 10:03:27 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxAZFnDpoBuLmYkFHbwDWsbgoB8yG48QmRaymSzZ9Q0=", "user"=>{"name"=>"henok", "email"=>"henok.addis@yale.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: password_confirmation
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'henok.addis@yale.edu' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."confirmation_token" = '3e79f1eadcaf18bf441243130ae1488d8e31b5b7654b7cfbaf4e98dae8fec243'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Binary data inserted for `string` type on column `confirmation_token`
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("confirmation_sent_at", "confirmation_token", "created_at", "email", "encrypted_password", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["confirmation_sent_at", "2014-07-07 14:03:27.763600"], ["confirmation_token", "3e79f1eadcaf18bf441243130ae1488d8e31b5b7654b7cfbaf4e98dae8fec243"], ["created_at", "2014-07-07 14:03:27.762173"], ["email", "henok.addis@yale.edu"], ["encrypted_password", "$2a$10$/Vcfk/sy/HdjFMlg/fRNbeGtvhAaNk8PTV8DecTRjzL4m7t25jdke"], ["name", "henok"], ["updated_at", "2014-07-07 14:03:27.762173"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.2ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 23.7ms
+
+Sent mail to henok.addis@yale.edu (2598.4ms)
+Date: Mon, 07 Jul 2014 10:03:27 -0400
+From: henok4@gmail.com
+Reply-To: henok4@gmail.com
+To: henok.addis@yale.edu
+Message-ID: <53baa8afc35dc_b343fdece0605bc674c9@Hannas-MacBook-Pro.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome to BoolaBasements!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://www.google.com/users/confirmation?confirmation_token=w7n8xxrj3TQcE5qt24TM">Confirm my account</a></p>
+<p> Enjoy the service, and have a fantastic day. </p>
+
+<p> -- Henok Addis | Paul Styslinger | 2017 --</p>
+
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2751ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-07 10:03:30 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-07 10:03:30 -0400
