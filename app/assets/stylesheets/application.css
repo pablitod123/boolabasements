@@ -66,7 +66,9 @@ p {
   font-weight: bold;
   line-height: 1;
 }
-
+.searchlisting{
+  text-align: center;
+}
 #logo:hover {
   color: #fff;
   text-decoration: none;
@@ -295,14 +297,18 @@ span{
   position: absolute;
   -webkit-font-smoothing: antialiased;
 }
+
 .icon-box:before {
-  content: url(fridge.png);
+  content: url(box.png);
 }
 .icon-couch:before{
   content: url(couch.png);
 };
-.icon-mini:before{
-  content: url(couch.png);
+.icon-james:before{
+  content: url(couch.gif);
+}
+.icon-fridge:before{
+  content: url(fridge.png);
 };
 
 

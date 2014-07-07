@@ -1,14 +1,19 @@
 <% provide(:title, 'Listings') %>
 <h1> New Listings</h1>
 <% if user_signed_in? %>
+<div class = "signupform pure-form pure-form-aligned">
 	<%= form_for(@listing) do |f| %>
-		<%= f.label "Start" %>
-		<%= f.text_field :datein, :class => 'datepicker'  %>
+		<div><%= f.label "Start" %>
+		<%= f.text_field :datein, :class => 'datepicker'  %></div>
 
-		<%= f.label "Finish" %>
-		<%= f.text_field :dateout, :class => 'datepicker'  %>
+		<div><%= f.label "Finish" %>
+		<%= f.text_field :dateout, :class => 'datepicker'  %></div>
+
+		<div><%= f.label "Location" %>
+		<%= f.text_field :location %></div>
 
 		<%= f.submit "Create Listing" %>
 	<% end %>
+	</div>
 	<!-- put stuff here later -->
 <% end %>

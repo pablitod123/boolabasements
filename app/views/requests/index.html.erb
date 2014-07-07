@@ -1,10 +1,10 @@
 <% provide(:title, 'Requests') %>
+<div id = "map-canvas"></div>
 <h1> Listings </h1>
 <h3> Listings for <%=current_user.requests.last.datein%> to <%=current_user.requests.last.dateout%></h3>
-<div id = "map-canvas"></div>
 <% if finalcompare()!= [] %>
 <% finalcompare().each do |id| %>
-<div><%= Listing.find(id).datein %>  <%= Listing.find(id).dateout %></div>
+<div class="searchlisting"><%= Listing.find(id).datein %>  <%= Listing.find(id).dateout %></div>
 <% end %>
 <% else %>
 <p style="text-align: center; color: red"> No listings matched your query :(</p>
