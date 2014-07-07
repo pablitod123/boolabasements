@@ -1,15 +1,24 @@
-
 <% if user_signed_in? %>
 	<%= button_to "New listing", "/listings/new", :class => "button", :method => :get  %>
+<div class = "signupform pure-form pure-form-aligned">
 	<%= form_for @request do |f| %>
-		<%= f.label :datein %>
-		<%= f.text_field :datein, :class => 'datepicker' %>
+		<div><%= f.label :datein %>
+		<%= f.text_field :datein, :class => 'datepicker' %></div>
 
-		<%= f.label :dateout %>
-		<%= f.text_field :dateout, :class => 'datepicker' %>
+		<div><%= f.label :dateout %>
+		<%= f.text_field :dateout, :class => 'datepicker' %></div>
 
 		<%= f.submit "Create Request" %>
 	<% end %>
+</div>
+	<h3> Select, generally, which items you want to store </h3>
+	<button class= "btn btn-5 btn-5b icon-couch"> <span> Couch </span> </button>
+
+	<button class= "btn btn-5 btn-5b icon-box"> <span> Fridge </span> </button>
+
+	<button class= "btn btn-5 btn-5b icon-mini"> <span> Box </span> </button>
+
+
 <% else %>
 <div class="center bighome">
   <h1>Boola Basements</h1>

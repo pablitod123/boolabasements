@@ -19,29 +19,26 @@ def dtoconverter(year,month,day)
     return newtime
 end
 
-@searchIds = []
+@searchIds ||= []
 
 def finalcompare()
-usersearch1 = "07/18/2014"
-usersearch2 = "07/20/2014"
-# current_user.requests.last.datein
-# current_user.requests.last.dateout
+  usersearch1 = "07/18/2014"
+  usersearch2 = "07/20/2014"
+  # current_user.requests.last.datein
+  # current_user.requests.last.dateout
 
-jdReqDatein = dateSplitter(usersearch1)
-jdReqDateout = dateSplitter(usersearch2)
+  jdReqDatein = dateSplitter(usersearch1)
+  jdReqDateout = dateSplitter(usersearch2)
 
-Listing.all.each do |listing|
-jdListDatein = dateSplitter(listing.datein)
-jdListDateout = dateSplitter(listing.dateout)
-		if jdReqDatein <= jdListDateout && jdListDatein <= jdReqDateout
-		@searchIds.push(listing.id)
-		end 
-	end 
-<<<<<<< HEAD
+  Listing.all.each do |listing|
+    jdListDatein = dateSplitter(listing.datein)
+    jdListDateout = dateSplitter(listing.dateout)
+  	if jdReqDatein <= jdListDateout && jdListDatein <= jdReqDateout
+  		@searchIds.push(listing.id)
+  		end 
+  	end 
   return @searchIds
-=======
->>>>>>> 5b029ae51279b9ff86695578c4351a3b7cd62de7
-end 
+end
 
 
 

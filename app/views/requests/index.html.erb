@@ -1,2 +1,10 @@
 <% provide(:title, 'Requests') %>
 <h1> Listings </h1>
+<h3> Listings for <%=current_user.requests.last.datein%> to <%=current_user.requests.last.dateout%></h3>
+<% if finalcompare()!= [] %>
+<% finalcompare().each do |id| %>
+<div><%= Listing.find(id).datein %>  <%= Listing.find(id).dateout %></div>
+<% end %>
+<% else %>
+<p style="text-align: center; color: red"> No listings matched your query :(</p>
+<%end%>
