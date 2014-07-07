@@ -1,2 +1,5 @@
 <% provide(:title, 'Requests') %>
 <h1> Listings </h1>
+<% finalcompare().each do |id| %>
+<div><%= Listing.find(id).datein %></div>
+<% end %>

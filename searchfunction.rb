@@ -19,7 +19,7 @@ def dtoconverter(year,month,day)
     return newtime
 end
 
-@searchIds = []
+@searchIds ||= []
 
 def finalcompare()
 usersearch1 = current_user.requests.last.datein
@@ -35,6 +35,7 @@ jdListDateout = dateSplitter(listing.dateout)
 		@searchIds.push(listing.id)
 		end 
 	end 
+  return @searchIds
 end 
 
 
