@@ -142,6 +142,14 @@ footer ul li {
   text-align: center;
 }
 
+#map-canvas {
+  width:500px;
+  height:600px;
+  padding:0px;
+  margin:0px;
+  float:left;
+}
+
 
 /* buttons! */
 
@@ -296,3 +304,5 @@ span{
 .icon-mini:before{
   content: url(couch.png);
 };
+
+
