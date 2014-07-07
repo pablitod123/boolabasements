@@ -37,7 +37,10 @@ jdListDateout = dateSplitter(listing.dateout)
 		@searchIds.push(listing.id)
 		end 
 	end 
+<<<<<<< HEAD
   return @searchIds
+=======
+>>>>>>> 5b029ae51279b9ff86695578c4351a3b7cd62de7
 end 
 
 
