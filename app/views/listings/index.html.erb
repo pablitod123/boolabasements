@@ -1,6 +1,7 @@
 <% provide(:title, 'Listings') %>
 <h1><%= current_user.name %>'s Listings</h1>
 <% @listings.each do |listing| %>
-<div class= "userlistings listings">START: <%= listing.datein %> FINISH: <%= listing.dateout %>	 LOCATION: <%=listing.location%></div>
+<div class= "userlistings listings">START: <%= listing.datein %> FINISH: <%= listing.dateout %>	 LOCATION: <%=listing.location %>    <%= link_to "edit", edit_listing_path(listing) %> | <%= link_to "delete", listing, method: :delete,
+                                  data: { confirm: "You sure?" }%> </div>
 <% end %>
 
