@@ -152,13 +152,13 @@ footer ul li {
 }
 
 #map-canvas {
-  width:600px;
-  height:600px;
+  width:650px;
+  height:650px;
   padding:0px;
   margin:0px;
   float:left;
   border:solid 2px black;
-/*  border-radius:50%;*/
+  border-radius:50%;
 }
 
 
