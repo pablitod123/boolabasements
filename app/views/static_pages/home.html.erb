@@ -1,5 +1,7 @@
 <% if user_signed_in? %>
-	<%= button_to "New listing", "/listings/new", :class => "button", :method => :get  %>
+	<%= button_to "New listing", "/listings/new", :class => "pure-button", :method => :get  %>
+	<%= button_to "My Listing", "/listings", :class => "pure-button", :method => :get  %>
+
 <div class = "signupform pure-form pure-form-aligned">
 	<%= form_for @request do |f| %>
 		<div><%= f.label :datein %>

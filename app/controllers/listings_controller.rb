@@ -15,12 +15,22 @@ class ListingsController < ApplicationController
 		@listing = Listing.find(params[:id])
 	end
 
+	def update
+	  @listing = Listing.find(params[:id])
+	 
+	  if @listing.update(listing_params)
+	    redirect_to '/listings'
+	  else
+	    render 'edit'
+	  end
+	end
+
 	def index
 		@listings = current_user.listings.all.reverse
 	end
 
 	def listing_params
-		params.require(:listing).permit(:datein, :dateout, :location, :user_id)
+		params.require(:listing).permit(:datein, :dateout, :location, :user_id, :description, :price)
 	end
 
 	def destroy
