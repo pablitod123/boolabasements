@@ -5,6 +5,8 @@ html {
 
 body {
   padding-top: 60px;
+  width: 100%;
+  height: 100%;
 }
 
 section {
@@ -14,6 +16,9 @@ section {
 textarea {
   resize: vertical;
 }
+form{
+
+}
 
 .center {
   text-align: center;
@@ -21,6 +26,11 @@ textarea {
 
 .center h1 {
   margin-bottom: 10px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
 }
 
 /* typography */
@@ -55,7 +65,14 @@ p {
 }
 
 /* header */
-
+.hometext{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color:  white;
+}
+.charliefancy{
+  margin: auto;
+  /*left:100px;*/
+}
 #logo {
   float: left;
   margin-right: 10px;
@@ -81,7 +98,9 @@ p {
   color: #fff;
   text-decoration: none;
 }
-
+.datebutton{
+  display: inline;
+}
 /* footer */
 
 footer {
@@ -117,7 +136,11 @@ footer ul li {
 .button{
   float:right;
 }
-
+.backgroundimage{
+  background-image: url(eastrock.jpg);
+  background-position: center;
+  height: 550px;
+}
 .listings {
   position: relative;
   margin: 0 auto;
@@ -138,16 +161,25 @@ footer ul li {
   padding:10px;
 }
 
+.navbutton{
+  margin-right: 1%;
+  float:right;
+  display: inline;
+}
+
 .pure-menu a:hover {
  color: orange;
 }
-
+.pure-form{
+}
 .pure-button {
   border-radius:20px;
 }
 
 .signupform {
-  background-color:#E0E0E0;
+  /*background-color:#E0E0E0;*/
+  padding-top: 8%;
+  /*display: inline;*/
   font-family: 'Noto Sans', sans-serif;
   text-align: center;
 }
@@ -176,7 +208,8 @@ footer ul li {
 }
 
 
-/* buttons! */
+
+
 
 .btn-5 {
   background: #823aa0;
