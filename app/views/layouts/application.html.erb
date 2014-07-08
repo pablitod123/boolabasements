@@ -24,6 +24,7 @@
 
 <!-- starting map  -->
 
+
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
@@ -36,7 +37,17 @@ geocoder = new google.maps.Geocoder();
 
 var mapcenter = new google.maps.LatLng(41.3100, -72.9236);
 
-var locations = ["old campus"]
+
+
+var almostlocations = "<%=final2compare()%>";
+
+ var myArray= almostlocations;
+    myArray=myArray.replace(/&quot;/gi,"\"");
+    myArray=myArray.replace(/\[/gi,"");
+    myArray=myArray.replace(/\]/gi,"");
+    myArray=myArray.split(',');
+var locations = myArray;
+
 
 var markers = [];
 var iterator = 0;
@@ -84,14 +95,6 @@ getCoordinates(locations[iterator], function(coords){
 
 window.onload = drop();
 </script>
-<!-- <style>
-      #map-canvas {
-        height: 300px;
-        width:500px;
-        margin: 0px;
-        padding: 0px
-      }
-    </style> -->
     <script>
 google.maps.event.addDomListener(window, 'load', initialize);
     </script>

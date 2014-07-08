@@ -1,16 +1,9 @@
+# <!-- var locations = ["<%= Listing.last.location %>"]
+
+# for (var y = 0; y < (<%Listing.all.count%>); y++) {
+#  -->
+
 require 'date'
-
-module ApplicationHelper
-
-  # Returns the full title on a per-page basis.
-  def full_title(page_title)
-    base_title = "Boola Basements"
-    if page_title.empty?
-      base_title
-    else
-      "#{base_title} | #{page_title}"
-    end
-  end
 
 
   def dateSplitter(userinput)
@@ -32,8 +25,8 @@ end
 def final2compare()
   locations = []
 
-  usersearch1 = current_user.requests.last.datein
-  usersearch2 = current_user.requests.last.dateout
+  usersearch1 = User.last.requests.last.datein
+  usersearch2 = User.last.requests.last.dateout
 
   jdReqDatein = dateSplitter(usersearch1)
   jdReqDateout = dateSplitter(usersearch2)
@@ -50,7 +43,3 @@ def final2compare()
   return locations
 end 
 
-
-
-
-end
