@@ -41,7 +41,6 @@ geocoder = new google.maps.Geocoder();
 
 var mapcenter = new google.maps.LatLng(41.3100, -72.9236);
 var almostlocations = "<%=final2compare()%>";
-
 var myArray= almostlocations;
     myArray=myArray.replace(/&quot;/gi,"\"");
     myArray=myArray.replace(/\[/gi,"");
@@ -49,65 +48,48 @@ var myArray= almostlocations;
     myArray=myArray.split(',');
 var locations = myArray;
 
+function initialize() { 
+
+var mapOptions = {
+zoom: 14,
+center: mapcenter,
+mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+
+map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 
-var markers = [];
-var iterator = 0;
+var dropPin = function(address) {
+    geocoder.geocode({
+        'address': address},
+        function(results) {
+        var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location,
+            title: address,
+            animation: google.maps.Animation.DROP,
+        });
+    });
+};
 
-var map;
-
-function initialize() {
-  var mapOptions = {
-    zoom: 14,
-    center: mapcenter
-  };
-
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-          mapOptions);
+function createMarkers() {
+    for (var j = 0; j < locations.length; j++) {
+    
+      dropPin(locations[j]);
+  
+    }
 }
 
-
-function drop() {
-  for (var i = 0; i < locations.length; i++) {
-    setTimeout(function() {
-      addMarker();
-    }, (i + 1) * 300);
-  }
+window.onload = createMarkers();
 }
 
-function getCoordinates(address, callback) {
-var coordinates;
-geocoder.geocode({ address: address}, function (results, status) {
- coords_obj = results[0].geometry.location;
- coordinates = [coords_obj.B,coords_obj.k];
- callback(coordinates);
- })
-}
-
-function addMarker() {
-getCoordinates(locations[iterator], function(coords){
-  markers.push(new google.maps.Marker({
-    position: new google.maps.LatLng(coords[1], coords[0]),
-    map: map,
-    draggable: false,
-    animation: google.maps.Animation.DROP
-  }));
-  iterator++;
-});
-}
-
-window.onload = drop();
 </script>
-    <script>
+  <script>
 google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-
 <% end %>
 
   </head>
-
-
-
 
   <body>
     <%= render 'layouts/header' %>
