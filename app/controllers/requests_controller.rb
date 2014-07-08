@@ -11,6 +11,10 @@ class RequestsController < ApplicationController
 		redirect_to "/requests"
 	end
 
+	def show
+		@listing = Listing.find(params[:id])
+	end
+
 	def request_params
 		params.require(:request).permit(:datein, :dateout, :user_id)
 	end

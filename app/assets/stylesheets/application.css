@@ -1,5 +1,6 @@
 html {
   overflow-y: scroll;
+ 
 }
 
 body {
@@ -133,7 +134,7 @@ footer ul li {
 
 #navbar {
   background-color:#F0F0F0;
-  margin-top: -40px;
+  margin-top: -60px;
   padding:10px;
 }
 
@@ -152,13 +153,26 @@ footer ul li {
 }
 
 #map-canvas {
-  width:650px;
-  height:650px;
+  width:500px;
+  height:500px;
   padding:0px;
   margin:0px;
   float:left;
   border:solid 2px black;
   border-radius:50%;
+  position: fixed;
+  left: 35px;
+}
+.containerlistings{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 30em;
+  width: 50%;
+  margin: auto;
+   overflow: -moz-scrollbars-vertical;
+  overflow: -webkit-scrollbars-vertical;
+  overflow: -o-scrollbars-vertical;
+  overflow: scrollbars-vertical;
 }
 
 
