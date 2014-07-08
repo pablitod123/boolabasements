@@ -4,7 +4,7 @@
 <h3> Listings for <%=current_user.requests.last.datein%> to <%=current_user.requests.last.dateout%></h3>
 <% if finalcompare()!= [] %>
 <% finalcompare().each do |id| %>
-<div class="searchlisting"><%= Listing.find(id).datein %>  <%= Listing.find(id).dateout %></div>
+<div class="searchlisting"><b><%= Listing.find(id).description %></b><br><%= Listing.find(id).location %> $<%= Listing.find(id).price %>0</div>
 <% end %>
 <% else %>
 <p style="text-align: center; color: red"> No listings matched your query :(</p>

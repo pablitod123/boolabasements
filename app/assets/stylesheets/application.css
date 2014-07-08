@@ -68,6 +68,13 @@ p {
 }
 .searchlisting{
   text-align: center;
+  display:block;
+  background-color:#39CCCC;
+  border-radius:10px;
+  padding:7px;
+  margin:5px;
+  margin: 5px auto;
+  font-size: 32px;
 }
 #logo:hover {
   color: #fff;
@@ -145,11 +152,13 @@ footer ul li {
 }
 
 #map-canvas {
-  width:500px;
+  width:600px;
   height:600px;
   padding:0px;
   margin:0px;
   float:left;
+  border:solid 2px black;
+/*  border-radius:50%;*/
 }
 
 
