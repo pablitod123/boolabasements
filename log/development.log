@@ -24158,3 +24158,1124 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:18:43
 
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:18:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:25:25 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 359ms (Views: 318.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:25:26 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:25:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:25:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:25:26 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:25:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:25:26 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:25:26 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:25:26 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:25:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:25:26 -0400
+
+
+Started GET "/assets/eastrock.jpg" for 127.0.0.1 at 2014-07-09 09:25:26 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-09 09:28:02 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (4.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (235.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 340ms (Views: 259.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-09 09:29:56 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:29:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:29:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:29:57 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:29:57 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:29:57 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:29:57 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:29:57 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:29:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:29:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:29:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:30:08 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/eastrock.jpg" for 127.0.0.1 at 2014-07-09 09:30:08 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:32:52 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:32:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:32:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:32:52 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:32:52 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:32:52 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:32:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:32:53 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:32:53 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:32:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:32:53 -0400
+
+
+Started GET "/assets/eastrock.jpg" for 127.0.0.1 at 2014-07-09 09:32:53 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:33:51 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:33:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:33:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:33:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:33:51 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:33:51 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:33:51 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:33:51 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:33:51 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:33:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:33:51 -0400
+
+
+Started GET "/assets/eastrock.jpg" for 127.0.0.1 at 2014-07-09 09:33:52 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:34:43 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:34:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:34:43 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:34:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:34:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:34:43 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:34:43 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:34:43 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:34:43 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:34:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:34:43 -0400
+
+
+Started GET "/assets/eastrock.jpg" for 127.0.0.1 at 2014-07-09 09:34:44 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:35:01 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 94ms (Views: 92.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:01 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:01 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:01 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:01 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:01 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:35:01 -0400
+
+
+Started GET "/assets/eastrock.jpg" for 127.0.0.1 at 2014-07-09 09:35:02 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:35:14 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:35:14 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:14 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:14 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:14 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:14 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:35:14 -0400
+
+
+Started GET "/assets/eastrock.jpg" for 127.0.0.1 at 2014-07-09 09:35:15 -0400
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-07-09 09:38:34 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 190ms (Views: 188.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c7hkG5JG3zCXnjwj90/Z4MbJZeXN5prUq6s8FzxnymE=", "user"=>{"email"=>"henok.addis@yale.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'henok.addis@yale.edu'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-07-09 13:38:38.278906"], ["last_sign_in_at", "2014-07-09 13:18:03.076048"], ["sign_in_count", 4], ["updated_at", "2014-07-09 13:38:38.281663"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 252ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 125ms (Views: 13.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:38 -0400
+
+
+Started GET "/assets/eastrock.jpg" for 127.0.0.1 at 2014-07-09 09:38:39 -0400
+
+
+Started GET "/assets/couch.png" for 127.0.0.1 at 2014-07-09 09:38:39 -0400
+
+
+Started GET "/assets/fridge.png" for 127.0.0.1 at 2014-07-09 09:38:39 -0400
+
+
+Started GET "/assets/box.png" for 127.0.0.1 at 2014-07-09 09:38:39 -0400
+
+
+Started GET "/fonts/icomoon/icomoon.woff" for 127.0.0.1 at 2014-07-09 09:38:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/fonts/icomoon/icomoon.woff"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (21.1ms)
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.4ms)
+
+
+Started GET "/fonts/icomoon/icomoon.ttf" for 127.0.0.1 at 2014-07-09 09:38:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/fonts/icomoon/icomoon.ttf"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.8ms)
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.5ms)
+
+
+Started GET "/fonts/icomoon/icomoon.svg" for 127.0.0.1 at 2014-07-09 09:38:39 -0400
+
+ActionController::RoutingError (No route matches [GET] "/fonts/icomoon/icomoon.svg"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.5ms)
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/henok/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.3ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2014-07-09 09:38:50 -0400
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zb3zBC2+tvidZr62HUSWDLYH3xL1xqq8TsMQDsuDk4=", "request"=>{"datein"=>"07/26/2014", "dateout"=>"08/20/2014"}, "commit"=>"Create Request"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "requests" ("created_at", "datein", "dateout", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-07-09 13:38:50.890870"], ["datein", "07/26/2014"], ["dateout", "08/20/2014"], ["updated_at", "2014-07-09 13:38:50.890870"], ["user_id", 1]]
+  [1m[35m (4.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/requests
+Completed 302 Found in 13ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2014-07-09 09:38:50 -0400
+Processing by RequestsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mRequest Load (0.3ms)[0m  SELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mListing Load (0.4ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  [1m[35mListing Load (0.3ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered requests/index.html.erb within layouts/application (58.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 136ms (Views: 132.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:38:51 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:51 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:51 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:51 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:51 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:38:51 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:41:27 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 94ms (Views: 89.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2014-07-09 09:41:29 -0400
+Processing by ListingsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"  WHERE "listings"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered listings/index.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 119ms (Views: 35.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:41:29 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:29 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:29 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:29 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:29 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:29 -0400
+
+
+Started GET "/listings/6/edit" for 127.0.0.1 at 2014-07-09 09:41:35 -0400
+Processing by ListingsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered listings/edit.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 96ms (Views: 93.1ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/listings/6" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+Processing by ListingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zb3zBC2+tvidZr62HUSWDLYH3xL1xqq8TsMQDsuDk4=", "listing"=>{"datein"=>"07/01/2014", "dateout"=>"08/31/2014", "location"=>"200 College Street new haven ct", "description"=>"Woerk with me", "price"=>"33.0"}, "commit"=>"Create Listing", "id"=>"6"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (37.0ms)[0m  UPDATE "listings" SET "location" = ?, "updated_at" = ? WHERE "listings"."id" = 6  [["location", "200 College Street new haven ct"], ["updated_at", "2014-07-09 13:41:40.130427"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/listings
+Completed 302 Found in 63ms (ActiveRecord: 39.2ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+Processing by ListingsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"  WHERE "listings"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered listings/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:41:42 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (9.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-09 09:41:44 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered static_pages/home.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 85ms (Views: 82.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:45 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:45 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:41:45 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:45 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:45 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:45 -0400
+
+
+Started POST "/requests" for 127.0.0.1 at 2014-07-09 09:41:54 -0400
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zb3zBC2+tvidZr62HUSWDLYH3xL1xqq8TsMQDsuDk4=", "request"=>{"datein"=>"07/31/2014", "dateout"=>"08/05/2014"}, "commit"=>"Create Request"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "requests" ("created_at", "datein", "dateout", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-07-09 13:41:54.588078"], ["datein", "07/31/2014"], ["dateout", "08/05/2014"], ["updated_at", "2014-07-09 13:41:54.588078"], ["user_id", 1]]
+  [1m[36m (16.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/requests
+Completed 302 Found in 27ms (ActiveRecord: 17.4ms)
+
+
+Started GET "/requests" for 127.0.0.1 at 2014-07-09 09:41:54 -0400
+Processing by RequestsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36mListing Load (0.3ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mListing Load (0.1ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mListing Load (0.1ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered requests/index.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "requests".* FROM "requests"  WHERE "requests"."user_id" = ?  ORDER BY "requests"."id" DESC LIMIT 1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:41:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:54 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:55 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:55 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:55 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:55 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:41:55 -0400
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2014-07-09 09:42:10 -0400
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered requests/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (1.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 249ms (Views: 246.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2014-07-09 09:44:23 -0400
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered requests/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:44:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:44:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:44:24 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:44:24 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:44:24 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:44:24 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:44:24 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:44:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:44:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:44:24 -0400
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2014-07-09 09:45:34 -0400
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered requests/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:45:34 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:34 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:34 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:34 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:34 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:34 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:34 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:34 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:34 -0400
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2014-07-09 09:45:53 -0400
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered requests/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 33ms (Views: 26.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:45:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:53 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:53 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:53 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:53 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:53 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:45:53 -0400
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2014-07-09 09:46:43 -0400
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.3ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered requests/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:46:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:46:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:46:43 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:46:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:46:43 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:46:43 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:46:43 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:46:43 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:46:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:46:43 -0400
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2014-07-09 09:47:05 -0400
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered requests/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 139ms (Views: 136.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:05 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:05 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:05 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:47:06 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:06 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:06 -0400
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2014-07-09 09:47:36 -0400
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered requests/show.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 52ms (Views: 43.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:36 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:47:36 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:36 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:37 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:37 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:47:37 -0400
+
+
+Started GET "/requests/1" for 127.0.0.1 at 2014-07-09 09:49:23 -0400
+Processing by RequestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mListing Load (0.2ms)[0m  SELECT  "listings".* FROM "listings"  WHERE "listings"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered requests/show.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 101ms (Views: 99.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-09 09:49:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-09 09:49:24 -0400
+
+
+Started GET "/assets/calendar.js?body=1" for 127.0.0.1 at 2014-07-09 09:49:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-09 09:49:24 -0400
+
+
+Started GET "/assets/CalendarPopup.js?body=1" for 127.0.0.1 at 2014-07-09 09:49:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-09 09:49:24 -0400
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-07-09 09:49:24 -0400
+
+
+Started GET "/assets/requests.js?body=1" for 127.0.0.1 at 2014-07-09 09:49:24 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-07-09 09:49:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-09 09:49:24 -0400

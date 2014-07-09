@@ -94,7 +94,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <body>
     <%= render 'layouts/header' %>
     <div class="container">
-      <p class="navbar-text pull-right">
       <% if user_signed_in? %>
         <!-- Logged in as <strong><%= current_user.name %></strong>. -->
       <% end %> 

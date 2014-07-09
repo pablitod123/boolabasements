@@ -136,6 +136,10 @@ footer ul li {
 .button{
   float:right;
 }
+.signinform{
+    font-family: 'Noto Sans', sans-serif;
+  text-align: center
+}
 .backgroundimage{
   background-image: url(eastrock.jpg);
   background-position: center;
@@ -146,9 +150,14 @@ footer ul li {
   margin: 0 auto;
   text-align: center;
 }
+#disqus_thread{
+  position:relative;
+  padding-right: 1em;
+}
 
 .bighome {
-  margin:30px;
+  margin:0px;
+
   padding:10%;
   border-radius: 10px;
   font-family: 'Noto Sans', sans-serif;
@@ -158,6 +167,7 @@ footer ul li {
   background-color:#F0F0F0;
   margin-top: -60px;
   padding:10px;
+  /*padding-bottom: 0px;*/
 }
 
 .navbutton{
