@@ -15,7 +15,9 @@ class ListingsController < ApplicationController
 		@listing = Listing.find(params[:id])
 	end
 
-	
+	def show
+		redirect_to '/'
+	end
 
 	def update
 	  @listing = Listing.find(params[:id])
