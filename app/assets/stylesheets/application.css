@@ -170,7 +170,7 @@ footer ul li {
   text-align: center
 }
 .backgroundimage{
-  background-image: url(eastrock.jpg);
+  background-image: url('eastrock.jpg');
   background-position: center;
   height: 40em;
 }
@@ -405,15 +405,15 @@ span{
 }
 
 .icon-box:before {
-  content: url(box.png);
+  content: url('box.png');
 }
 .icon-couch:before{
-  content: url(couch.png);
+  content: url('couch.png');
 };
 .icon-james:before{
-  content: url(couch.gif);
+  content: url('couch.gif');
 }
 .icon-fridge:before{
-  content: url(fridge.png);
+  content: url('fridge.png');
 };
 
