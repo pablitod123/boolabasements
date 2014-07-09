@@ -15,7 +15,9 @@ class ListingsController < ApplicationController
 		@listing = Listing.find(params[:id])
 	end
 
-	
+	def show
+		redirect_to '/'
+	end
 
 	def update
 	  @listing = Listing.find(params[:id])
@@ -28,7 +30,11 @@ class ListingsController < ApplicationController
 	end
 
 	def index
+		if user_signed_in?
 		@listings = current_user.listings.all.reverse
+		else
+		redirect_to '/'
+		end
 	end
 
 	def listing_params

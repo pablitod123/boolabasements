@@ -14,12 +14,14 @@
               <li class="pure-menu"> <%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>
           <% end %> 
     </ul>
+    <%if user_signed_in? %>
     <form action="/listings" class= "navbutton">
       <input type="submit" value="My Listings" class="pure-button">
     </form>
     <form action="/listings/new" class= "navbutton">
       <input type="submit" value="New Listings" class="pure-button">
     </form>
+    <% end  %>
 </div>
 </header>
 

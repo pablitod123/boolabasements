@@ -1,6 +1,5 @@
 html {
   overflow-y: scroll;
- 
 }
 
 body {
@@ -28,10 +27,7 @@ form{
   margin-bottom: 10px;
 }
 
-.container {
-  height: 100%;
-  width: 100%;
-}
+
 
 /* typography */
 
@@ -44,6 +40,7 @@ h1 {
   letter-spacing: -1px;
   margin-bottom: 40px;
   text-align: center;
+  text-shadow:  0 -1px white;
 }
 
 h2 {
@@ -68,6 +65,8 @@ p {
 .hometext{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   color:  white;
+  margin-bottom:2%;
+ /* margin-top:4em;*/
 }
 .charliefancy{
   margin: auto;
@@ -104,7 +103,7 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 1%;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999;
@@ -143,7 +142,7 @@ footer ul li {
 .backgroundimage{
   background-image: url(eastrock.jpg);
   background-position: center;
-  height: 550px;
+  height: 40em;
 }
 .listings {
   position: relative;
@@ -157,7 +156,6 @@ footer ul li {
 
 .bighome {
   margin:0px;
-
   padding:10%;
   border-radius: 10px;
   font-family: 'Noto Sans', sans-serif;
@@ -171,7 +169,7 @@ footer ul li {
 }
 
 .navbutton{
-  margin-right: 1%;
+  margin-right: 2%;
   float:right;
   display: inline;
 }
@@ -182,7 +180,8 @@ footer ul li {
 .pure-form{
 }
 .pure-button {
-  border-radius:20px;
+  border-radius:5px;
+  border: solid 1px black;
 }
 
 .signupform {
@@ -216,6 +215,9 @@ footer ul li {
   overflow: scrollbars-vertical;
 }
 
+.buttonstuff {
+
+}
 
 
 
@@ -326,12 +328,14 @@ span{
   cursor: pointer;
   padding: 25px 80px;
   display: inline-block;
-  margin: 15px 30px;
+  margin: 10px 5px;
+ /* left: 21%;*/
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
   outline: none;
   position: relative;
+
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -375,5 +379,4 @@ span{
 .icon-fridge:before{
   content: url(fridge.png);
 };
-
 
