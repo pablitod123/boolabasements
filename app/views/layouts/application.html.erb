@@ -9,9 +9,9 @@
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
      <style type="text/css">
     .ui-datepicker {
-    background: #333;
+    background: white;
     border: 1px solid #555;
-    color: #EEE;
+    color: black;
   }
   </style>
     <script>
@@ -51,9 +51,25 @@ var locations = myArray;
 function initialize() { 
 
 var mapOptions = {
-zoom: 14,
+zoom: 13,
 center: mapcenter,
-mapTypeId: google.maps.MapTypeId.ROADMAP
+mapTypeId: google.maps.MapTypeId.ROADMAP,
+panControl: true,
+  panControlOptions: {
+    position: google.maps.ControlPosition.RIGHT_CENTER
+    },
+ zoomControl: true,
+    zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.SMALL,
+        position: google.maps.ControlPosition.LEFT_CENTER
+    },
+mapTypeControl: true,
+    mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+        position: google.maps.ControlPosition.TOP_CENTER
+    },
+  scaleControl: false,
+
 };
 
 map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -93,13 +109,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
   <body>
     <%= render 'layouts/header' %>
-    <div class="container">
-      <p class="navbar-text pull-right">
+   <!--  <div class="container"> -->
+     <!--  <p class="navbar-text pull-right"> -->
       <% if user_signed_in? %>
         <!-- Logged in as <strong><%= current_user.name %></strong>. -->
       <% end %> 
       <%= yield %> <br>
       <%= render 'layouts/footer' %>
-    </div>
+   <!--  </div> -->
   </body>
 </html>

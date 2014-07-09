@@ -28,7 +28,11 @@ class ListingsController < ApplicationController
 	end
 
 	def index
+		if user_signed_in?
 		@listings = current_user.listings.all.reverse
+		else
+		redirect_to '/'
+		end
 	end
 
 	def listing_params

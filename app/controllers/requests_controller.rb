@@ -15,6 +15,12 @@ class RequestsController < ApplicationController
 		@listing = Listing.find(params[:id])
 	end
 
+	def index
+		if !user_signed_in?
+		redirect_to '/'
+		end
+	end 
+
 	def request_params
 		params.require(:request).permit(:datein, :dateout, :user_id)
 	end
