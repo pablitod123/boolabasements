@@ -148,9 +148,8 @@ footer ul li {
 }
 
 .bighome {
-  background-color: #3366CC;
-  margin:10px;
-  padding:20px;
+  margin:30px;
+  padding:10%;
   border-radius: 10px;
   font-family: 'Noto Sans', sans-serif;
 }
