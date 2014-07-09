@@ -60,7 +60,7 @@ h3 {
 
 p {
   font-size: 1.1em;
-  line-height: 1.7em;
+  line-height: 1.7em
 }
 
 /* header */
@@ -73,6 +73,10 @@ p {
 .charliefancy{
   margin: auto;
   /*left:100px;*/
+}
+.change{
+  display:inline;
+  position: relative;
 }
 #logo {
   float: left;
@@ -94,6 +98,20 @@ p {
   margin:5px;
   margin: 5px auto;
   font-size: 32px;
+}
+.userlistings{
+  text-align: center;
+  display:block;
+  background-color:#39CCCC;
+  border-radius:10px;
+  padding:7px;
+  margin:5px;
+  border: solid;
+  margin: 5px auto;
+  font-size: 32px;
+}
+.userlistingpage{
+  margin-bottom: 10px;
 }
 #logo:hover {
   color: #fff;

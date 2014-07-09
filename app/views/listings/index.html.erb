@@ -1,7 +1,19 @@
 <% provide(:title, 'Listings') %>
 <h1><%= current_user.name %>'s Listings</h1>
-<% @listings.each do |listing| %>
-<div class= "userlistings listings">START: <%= listing.datein %> FINISH: <%= listing.dateout %>	 LOCATION: <%=listing.location %>, <%=listing.price %>, <%=listing.description %>   <%= link_to "edit", edit_listing_path(listing) %> | <%= link_to "delete", listing, method: :delete,
-                                  data: { confirm: "You sure?" }%> </div>
-<% end %>
+<div class="pure-g">
+		<% @listings.each do |listing| %>
+
+	<div class = "pure-u-1-5"> </div>
+	<div class="pure-u-3-5 userlistingpage">
+		<div class= "userlistings listings">
+			<b><%= listing.description %></b><br><%= listing.location %> <br> $<%= listing.price %>0/week<br>
+			<%=listing.datein%> - <%=listing.dateout%>
+		</div>  
+	</div>
+	<div class="pure-u-1-5">
+		<%= button_to "Edit", edit_listing_path(listing), :method => :get, :class => "pure-button" %>
+		<%= button_to "Delete", listing,  :class => "pure-button", method: :delete, data: { confirm: "You sure?" }%>
+	</div>
+	<% end %>
+</div>
 
