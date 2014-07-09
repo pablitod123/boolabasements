@@ -1,27 +1,29 @@
 <% provide(:title, 'Listings') %>
 <h1> New Listings</h1>
 <% if user_signed_in? %>
-<div class = "signupform pure-form pure-form-aligned">
+<form class = "signupform pure-form pure-form-aligned">
+<fieldset>
 	<%= form_for(@listing) do |f| %>
-		<div><%= f.label "Start" %>
-		<%= f.text_field :datein, :class => 'datepicker'  %></div>
+		<div class="pure-control-group"><%= f.label "Start" %>
+		<%= f.text_field :datein, :class => 'datepicker', :placeholder => "Click to Select Date" %></div>
 
-		<div><%= f.label "Finish" %>
-		<%= f.text_field :dateout, :class => 'datepicker'  %></div>
+		<div class="pure-control-group"><%= f.label "Finish" %>
+		<%= f.text_field :dateout, :class => 'datepicker', :placeholder => "Click to Select Date"  %></div>
 
-		<div><%= f.label "Location" %>
-		<%= f.text_field :location %></div>
+		<div class="pure-control-group"><%= f.label "Location" %>
+		<%= f.text_field :location, :placeholder => "Street Address City" %></div>
 
-		<div><%= f.label "Description" %>
-		<%= f.text_field :description %></div>
+		<div class="pure-control-group"><%= f.label "Description" %>
+		<%= f.text_field :description, :placeholder => "Great location!" %></div>
 
+		<div class="pure-control-group"><%= f.label "Price (per Week)" %>
+		<%= f.text_field :price, :placeholder => "30" %></div>
 
-		<div><%= f.label "Price per Week" %>
-		<%= f.text_field :price %></div>
-
-
-		<%= f.submit "Create Listing" %>
+		<div class="pure-control-group">
+		<%= f.submit "Create Listing", :class => "pure-button" %>
+		</div>
 	<% end %>
-	</div>
+	</fieldset>
+	</form>
 	<!-- put stuff here later -->
 <% end %>

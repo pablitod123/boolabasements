@@ -113,8 +113,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       <% if user_signed_in? %>
         <!-- Logged in as <strong><%= current_user.name %></strong>. -->
       <% end %> 
-      <%= yield %> <br>
+      <%= yield %>
       <%= render 'layouts/footer' %>
-   <!--  </div> -->
   </body>
 </html>
