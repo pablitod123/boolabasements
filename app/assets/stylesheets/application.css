@@ -356,13 +356,14 @@ span{
 
 /* General button style (reset) */
 .btn {
-  border: none;
+  border: solid;
+  border-radius: 100px;
   font-family: inherit;
   font-size: inherit;
   color: black;
   background:  #39CCCC;
   cursor: pointer;
-  padding: 25px 80px;
+  padding: 20px 80px;
   display: inline-block;
   margin: 10px 5px;
  /* left: 21%;*/
