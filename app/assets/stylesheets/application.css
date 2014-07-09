@@ -170,7 +170,7 @@ footer ul li {
   text-align: center
 }
 .backgroundimage{
-  background-image: url('eastrock.jpg');
+  background-image: url(<%= assets_data_uri 'eastrock.jpg' %>);
   background-position: center;
   height: 40em;
 }
