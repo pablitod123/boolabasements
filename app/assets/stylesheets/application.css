@@ -63,6 +63,10 @@ p {
   line-height: 1.7em
 }
 
+a {
+  text-decoration:none;
+}
+
 /* header */
 .hometext{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -78,6 +82,12 @@ p {
   display:inline;
   position: relative;
 }
+
+#about {
+  padding-left:20px;
+  padding-right:20px;
+}
+
 #logo {
   float: left;
   margin-right: 10px;
