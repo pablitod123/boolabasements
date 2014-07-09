@@ -22,4 +22,9 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postrgresql
+  encoding: unicode
+  database: basements
+  pool: 5
+  username: user
+  password:
