@@ -162,6 +162,26 @@ footer ul li {
   float: left;
   margin-left: 10px;
 }
+.colors{
+  background-color: #FF851B;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  margin-bottom:50px;
+  margin-top:50px;
+
+
+}
+.colorsfade{
+  background-color: #FF851B;
+  opacity: .2;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  margin-bottom:50px;
+  margin-top:50px;
+
+}
 .button{
   float:right;
 }
